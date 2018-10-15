@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/select_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#ffcd2626">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/title_name"
+            android:gravity="center"
+            android:text="当前城市：南京"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/title_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/base_action_bar_back_normal"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/title_back"
+            android:background="#A71717"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/select_title"
+        android:id="@+id/select_search"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp">
+        <RelativeLayout
+            android:id="@+id/search_kuan"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText
+                android:id="@+id/search_et"
+                android:hint="搜素全国城市（中文）"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_search"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:singleLine="true"
+                android:inputType="text"
+                android:paddingLeft="35dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/search_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/search_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/select_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ListView
+    android:id="@+id/lv_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</ListView>
+</RelativeLayout>
+</RelativeLayout>
